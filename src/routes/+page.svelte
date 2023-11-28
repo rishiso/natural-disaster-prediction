@@ -1,13 +1,13 @@
 <script lang="ts">
   import { Input } from "$lib/components/ui/input";
   import * as Tabs from "$lib/components/ui/tabs";
+  let googleMapsUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyCPl0t1z471mvNMji79lGnQ7FbSzrkuXQY&q=Georgia+Tech";
 
   function handleKeyDown(event: KeyboardEvent) {
       const { key, target } = event as unknown as { key: string; target: { value: any } };
       if (key === "Enter") {
           const address = target.value;
-          const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-          window.open(googleMapsUrl, "_blank");
+          googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCPl0t1z471mvNMji79lGnQ7FbSzrkuXQY&q=${encodeURIComponent(address)}`;
       }
   }
 </script>
@@ -30,6 +30,7 @@
   <Tabs.Root value="account" class="w-full">
     <Tabs.List class="flex justify-center space-x-4 mb-4">
       <Tabs.Trigger class="flex-1 text-center shadow-xl " value="account">About</Tabs.Trigger>
+      <Tabs.Trigger class="flex-1 text-center shadow-xl " value="map">Map</Tabs.Trigger>
       <Tabs.Trigger class="flex-1 text-center shadow-xl " value="password">Team</Tabs.Trigger>
     </Tabs.List>
     <Tabs.Content value="account">
@@ -46,12 +47,18 @@
             </p>
           </div>
         </div>
+      </div>
+    </Tabs.Content>
+
+    <Tabs.Content value="map">
+      <div class="flex flex-col items-center bg-[rgb(140,186,134)] p-8">
         <iframe
-          width="600"
-          height="450"
+          title="Map"
+          src={googleMapsUrl}
+          width="800"
+          height="600"
           style="border:0; margin-top: 20px;"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPl0t1z471mvNMji79lGnQ7FbSzrkuXQY&q=Space+Needle,Seattle+WA">
-        </iframe>
+        ></iframe>
       </div>
     </Tabs.Content>
     
@@ -84,10 +91,6 @@
   </Tabs.Root>
 
 </div>
-
-
-
-
 
   <style>
     .background-container {
