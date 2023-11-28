@@ -28,55 +28,66 @@
 
 <div class="content-container flex flex-col items-center justify-center w-full">
   <Tabs.Root value="account" class="w-full">
-      <Tabs.List class="flex justify-center space-x-4 mb-4">
-          <Tabs.Trigger class="flex-1 text-center shadow-xl " value="account">About</Tabs.Trigger>
-          <Tabs.Trigger class="flex-1 text-center shadow-xl " value="password">Team</Tabs.Trigger>
-      </Tabs.List>
-      <Tabs.Content value="account">
-          <!-- Content for About -->
-          <div class="flex flex-col items-center bg-[rgb(140,186,134)] p-8">
-              <div class="w-full max-w-4xl bg-green-100 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center">
-                  <h2 class="font-bold text-3xl text-green-800 mb-8 text-center">OUR GOAL</h2>
-                  <div class="grid md:grid-cols-2 gap-2 w-full">
-                      <p class="text-green-700">
-                          Climate change is a pressing global issue with irreversible effects on nature and societies. Climate tech is a crucial emerging field focused on developing technologies to tackle climate change impacts, such as extreme weather events, rising sea levels, and shifting precipitation patterns. Without immediate action, these issues will worsen. Currently, predicting natural disasters is challenging due to complex natural systems, data gaps, and model limitations.
-                      </p>
-                      <p class="text-green-700">
-                          Our approach uses machine learning techniques like transfer learning and computer vision to analyze Google Earth Engine Datasets for regional climate patterns. We employ computer vision to process global satellite data and link it with climate data to assess natural disaster likelihood. Transfer learning then tailors the analysis to user-inputted regions, considering factors like climate trends, dryness, humidity, and surrounding influences. Our end product provides users with analyses of potential natural disasters, estimated timeframes, and more for their selected region.
-                      </p>
-                  </div>
-              </div>
+    <Tabs.List class="flex justify-center space-x-4 mb-4">
+      <Tabs.Trigger class="flex-1 text-center shadow-xl " value="account">About</Tabs.Trigger>
+      <Tabs.Trigger class="flex-1 text-center shadow-xl " value="password">Team</Tabs.Trigger>
+    </Tabs.List>
+    <Tabs.Content value="account">
+      <!-- Content for About -->
+      <div class="flex flex-col items-center bg-[rgb(140,186,134)] p-8">
+        <div class="w-full max-w-4xl bg-green-100 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center">
+          <h2 class="font-bold text-3xl text-green-800 mb-8 text-center">OUR GOAL</h2>
+          <div class="grid md:grid-cols-2 gap-2 w-full">
+            <p class="text-green-700">
+              Climate change is a pressing global issue with irreversible effects on nature and societies. Climate tech is a crucial emerging field focused on developing technologies to tackle climate change impacts, such as extreme weather events, rising sea levels, and shifting precipitation patterns. Without immediate action, these issues will worsen. Currently, predicting natural disasters is challenging due to complex natural systems, data gaps, and model limitations.
+            </p>
+            <p class="text-green-700">
+              Our approach uses machine learning techniques like transfer learning and computer vision to analyze Google Earth Engine Datasets for regional climate patterns. We employ computer vision to process global satellite data and link it with climate data to assess natural disaster likelihood. Transfer learning then tailors the analysis to user-inputted regions, considering factors like climate trends, dryness, humidity, and surrounding influences. Our end product provides users with analyses of potential natural disasters, estimated timeframes, and more for their selected region.
+            </p>
           </div>
-      </Tabs.Content>
-      
-      <Tabs.Content value="password">
-        <div class="flex flex-col items-center bg-[rgb(140,186,134)] p-8">
-            <div class="w-full max-w-4xl bg-green-100 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center">
-                <h2 class="font-bold text-3xl text-green-800 mb-8 text-center">OUR TEAM</h2>
-                <div class="grid md:grid-cols-2 gap-2 w-full">
-                    <div class="text-center text-green-700">Sidharth Subbarao</div>
-                    <div class="text-center text-green-700">Rishi Soni</div>
-                    <div class="text-center text-green-700">Cole McGinnis</div>
-                    <div class="text-center text-green-700">Pranav Narala</div>
-                    <div class="text-center text-green-700">Aneeta Thokkadam</div>
-                    <div class="text-center text-green-700">Varun Vudathu</div>
-                    <div class="text-center text-green-700">Rohit Prasanna</div>
-                    <div class="text-center text-green-700">Aman Patel</div>
-                    <div class="text-center text-green-700">Ananya Kumar</div>
-                    <div class="text-center text-green-700">Shitij Govil</div>
-                    <div class="text-center text-green-700">Kevin Park</div>
-                    <div class="text-center text-green-700">Tia Kungwani</div>
-                    <div class="text-center text-green-700">Pranav Somu</div>
-                    <div class="text-center text-green-700">John Kucharewicz</div>
-                    <div class="text-center text-green-700">Leo Jiang</div>
-                    <div class="text-center text-green-700">Sai Guntabonu</div>
-                </div>
-            </div>
         </div>
+        <iframe
+          width="600"
+          height="450"
+          style="border:0; margin-top: 20px;"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPl0t1z471mvNMji79lGnQ7FbSzrkuXQY&q=Space+Needle,Seattle+WA">
+        </iframe>
+      </div>
     </Tabs.Content>
+    
+    <Tabs.Content value="password">
+    <div class="flex flex-col items-center bg-[rgb(140,186,134)] p-8">
+      <div class="w-full max-w-4xl bg-green-100 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center">
+        <h2 class="font-bold text-3xl text-green-800 mb-8 text-center">OUR TEAM</h2>
+        <div class="grid md:grid-cols-2 gap-2 w-full">
+          <div class="text-center text-green-700">Sidharth Subbarao</div>
+          <div class="text-center text-green-700">Rishi Soni</div>
+          <div class="text-center text-green-700">Cole McGinnis</div>
+          <div class="text-center text-green-700">Pranav Narala</div>
+          <div class="text-center text-green-700">Aneeta Thokkadam</div>
+          <div class="text-center text-green-700">Varun Vudathu</div>
+          <div class="text-center text-green-700">Rohit Prasanna</div>
+          <div class="text-center text-green-700">Aman Patel</div>
+          <div class="text-center text-green-700">Ananya Kumar</div>
+          <div class="text-center text-green-700">Shitij Govil</div>
+          <div class="text-center text-green-700">Kevin Park</div>
+          <div class="text-center text-green-700">Tia Kungwani</div>
+          <div class="text-center text-green-700">Pranav Somu</div>
+          <div class="text-center text-green-700">John Kucharewicz</div>
+          <div class="text-center text-green-700">Leo Jiang</div>
+          <div class="text-center text-green-700">Sai Guntabonu</div>
+        </div>
+      </div>
+    </div>
+  </Tabs.Content>
 
   </Tabs.Root>
+
 </div>
+
+
+
+
 
   <style>
     .background-container {
@@ -142,5 +153,12 @@
         background-color: rgb(140, 186, 134);
         flex:1;
     }
+  
+  .map-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
 
   </style>
